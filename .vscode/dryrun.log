@@ -1,0 +1,102 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/yassine/Desktop/42_project/tester/libft-unit-test/C00_tester'
+rm -f libft.so
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo  "\033[38;5;46m" make -j 3 -C "../libft"        "\033[31m";  make -j 3 -C "../libft"        
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo  "\033[38;5;46m" make bonus -j 3 -C "../libft" || true        "\033[31m";  make bonus -j 3 -C "../libft" || true        
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo  "\033[38;5;46m" cp "../libft/libft.a" assets/        "\033[31m";  cp "../libft/libft.a" assets/        
+rm -rf assets/tmp || echo -n
+mkdir -p assets/tmp
+cd assets/tmp && ar -xv ../libft.a 1>/dev/null
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo  "\033[38;5;46m➤ \033[38;5;47m" clang  -shared -fPIC  assets/tmp/*.o  -o  libft.so    "\033[31m";  clang  -shared -fPIC  assets/tmp/*.o  -o  libft.so    
+mkdir -p obj/src/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/main.o  -c  src/main.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/main.o  -c  src/main.c 
+mkdir -p obj/src/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/test_functions.o  -c  src/test_functions.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/test_functions.o  -c  src/test_functions.c 
+mkdir -p obj/src/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/display_test_result.o  -c  src/display_test_result.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/display_test_result.o  -c  src/display_test_result.c 
+mkdir -p obj/src/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/signal.o  -c  src/signal.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/signal.o  -c  src/signal.c 
+mkdir -p obj/src/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/sandbox.o  -c  src/sandbox.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/sandbox.o  -c  src/sandbox.c 
+mkdir -p obj/src/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/bench_functions.o  -c  src/bench_functions.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/bench_functions.o  -c  src/bench_functions.c 
+mkdir -p obj/src/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/additional_functions.o  -c  src/additional_functions.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/src/additional_functions.o  -c  src/additional_functions.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/hardcore-main.o  -c  hardcore-mode/hardcore-main.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/hardcore-main.o  -c  hardcore-mode/hardcore-main.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/error.o  -c  hardcore-mode/error.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/error.o  -c  hardcore-mode/error.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/ncurses-display.o  -c  hardcore-mode/ncurses-display.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/ncurses-display.o  -c  hardcore-mode/ncurses-display.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-init.o  -c  hardcore-mode/test-init.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-init.o  -c  hardcore-mode/test-init.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-utils.o  -c  hardcore-mode/test-utils.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-utils.o  -c  hardcore-mode/test-utils.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strcpy.o  -c  hardcore-mode/test-strcpy.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strcpy.o  -c  hardcore-mode/test-strcpy.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strcmp.o  -c  hardcore-mode/test-strcmp.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strcmp.o  -c  hardcore-mode/test-strcmp.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+ 
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strncmp.o  -c  hardcore-mode/test-strncmp.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strncmp.o  -c  hardcore-mode/test-strncmp.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memset.o  -c  hardcore-mode/test-memset.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memset.o  -c  hardcore-mode/test-memset.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memcpy.o  -c  hardcore-mode/test-memcpy.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memcpy.o  -c  hardcore-mode/test-memcpy.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memccpy.o  -c  hardcore-mode/test-memccpy.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memccpy.o  -c  hardcore-mode/test-memccpy.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memmove.o  -c  hardcore-mode/test-memmove.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memmove.o  -c  hardcore-mode/test-memmove.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memchr.o  -c  hardcore-mode/test-memchr.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memchr.o  -c  hardcore-mode/test-memchr.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memcmp.o  -c  hardcore-mode/test-memcmp.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-memcmp.o  -c  hardcore-mode/test-memcmp.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strlen.o  -c  hardcore-mode/test-strlen.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strlen.o  -c  hardcore-mode/test-strlen.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strncpy.o  -c  hardcore-mode/test-strncpy.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strncpy.o  -c  hardcore-mode/test-strncpy.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strcat.o  -c  hardcore-mode/test-strcat.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strcat.o  -c  hardcore-mode/test-strcat.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strncat.o  -c  hardcore-mode/test-strncat.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strncat.o  -c  hardcore-mode/test-strncat.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strchr.o  -c  hardcore-mode/test-strchr.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strchr.o  -c  hardcore-mode/test-strchr.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strrchr.o  -c  hardcore-mode/test-strrchr.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strrchr.o  -c  hardcore-mode/test-strrchr.c 
+mkdir -p obj/hardcore-mode/
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123;m[  Building #0  ]\033[0m"
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;123m➤ \033[0m\033[38;5;122m" clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strstr.o  -c  hardcore-mode/test-strstr.c "\033[31m";  clang  -O2 -funroll-loops  -Werror -Wall -Wextra  -I./include  -o  obj/hardcore-mode/test-strstr.o  -c  hardcore-mode/test-strstr.c 
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo "\033[38;5;46;m[  Linking #0  ]\033[0m";
+ 
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo  "\033[38;5;46m➤ \033[38;5;47m" clang  -Werror -Wall -Wextra  -O2 -funroll-loops       -lncurses  -o  assets/libtests  obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o"\033[31m";  clang  -Werror -Wall -Wextra  -O2 -funroll-loops       -lncurses  -o  assets/libtests  obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo  "\033[38;5;46m" clang -Werror -Wall -Wextra -dynamiclib assets/malloc.c -I ./include -o assets/malloc.dylib        "\033[31m";  clang -Werror -Wall -Wextra -dynamiclib assets/malloc.c -I ./include -o assets/malloc.dylib        
+for I in `seq 1 0`; do test "0" '!=' '0' && printf "\t"; done; echo  "\033[38;5;46m" clang -Werror -Wall -Wextra assets/wrapper.c -I ./include -o run_test        "\033[31m";  clang -Werror -Wall -Wextra assets/wrapper.c -I ./include -o run_test        
+make: Leaving directory `/Users/yassine/Desktop/42_project/tester/libft-unit-test/C00_tester'
+ 
